@@ -1,0 +1,181 @@
+@import "variable";
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+body {
+  font-family: 'Geologica', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  color: var(--cyan);
+  background-color: var(--grey-white);
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 400;
+  color: var(--cyan);
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.text_colored {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--blue-dark);
+}
+
+.text_slider {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.container_big {
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cyan);
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--blue-dark);
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 67px;
+  padding: 0 50px;
+  border-radius: 20px;
+  background-color: var(--blue-dark);
+  font-size: 24px;
+  white-space: nowrap;
+  color: white;
+  font-weight: 500;
+  transition: all 0.2s;
+
+  &:hover {
+    color: white;
+    background-color: var(--cyan);
+  }
+}
+
+.button_small {
+  height: 52px;
+  font-size: 14px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.swiper {
+  .swiper-pagination-bullet {
+    background-color: white;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: var(--cyan-white);
+  }
+}
+
+@media (max-width: 1400px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .text_colored {
+    font-size: 24px;
+  }
+
+  .text_slider {
+    font-size: 32px;
+  }
+
+  .button {
+    padding: 0 20px;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .button_small {
+    height: 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 46px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .text_colored {
+    font-size: 18px;
+  }
+
+  .text_slider {
+    font-size: 26px;
+  }
+
+  .container_big {
+    padding: 0 20px;
+  }
+
+  .button_small {
+    font-size: 12px;
+    height: 48px;
+  }
+}
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/mobile-menu";
+@import "blocks/slider";
+@import "blocks/about";
+@import "blocks/action";
+@import "blocks/steps";
+@import "blocks/production";
+@import "blocks/example";
+@import "blocks/reviews";
+@import "blocks/map";

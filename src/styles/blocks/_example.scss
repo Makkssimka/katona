@@ -1,0 +1,30 @@
+.example {
+  margin-top: 150px;
+}
+
+.example__list {
+  margin-top: 30px;
+}
+
+.example__nav_next,
+.example__nav_prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+
+@media (max-width: 960px) {
+  .example {
+    margin-top: 80px;
+  }
+
+  .slider__nav_next,
+  .slider__nav_prev {
+    height: 36px;
+    width: 36px;
+  }
+}

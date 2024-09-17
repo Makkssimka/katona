@@ -1,0 +1,157 @@
+.slider {
+  margin: 70px 0 10px;
+  width: 100%;
+  height: 740px;
+  overflow-y: auto;
+
+  .swiper-pagination {
+    top: auto;
+    bottom: 30px;
+  }
+}
+
+.slider__item {
+  position: relative;
+  width: 80%;
+  height: 660px;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  &:nth-child(1) {
+    background-image: url("/images/slider/slider-1.jpg");
+  }
+
+  &:nth-child(2) {
+    background-image: url("/images/slider/slider-2.jpg");
+  }
+
+  &:nth-child(3) {
+    background-image: url("/images/slider/slider-3.jpg");
+  }
+}
+
+.slider__watermark {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: auto;
+}
+
+.slider__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55%;
+  padding: 43px 28px 18px 62px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0 50px 0 50px;
+
+  p {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 300;
+    color: var(--cyan);
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--blue-dark);
+
+    &:hover {
+      color: var(--cyan);
+    }
+  }
+}
+
+.slider__nav_next,
+.slider__nav_prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 56px;
+  width: 56px;
+  top: calc(50% - 28px);
+  border-radius: 50%;
+}
+
+.slider__nav_next {
+  right: 8.5%;
+}
+
+.slider__nav_prev {
+  left: 8.5%;
+}
+
+@media (max-width: 1400px) {
+  .slider {
+    height: 540px;
+  }
+
+  .slider__item {
+    height: 460px;
+  }
+
+  .slider__info {
+    p {
+      font-size: 32px;
+    }
+
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .slider {
+    height: 580px;
+    margin: 35px 0 10px;
+    padding: 0 20px;
+
+    .swiper-pagination {
+      bottom: 20px;
+    }
+  }
+
+  .slider__item {
+    width: 100%;
+    height: 520px;
+
+    &:nth-child(1) {
+      background-image: url("/images/slider/slider-mobile-1.jpg");
+    }
+
+    &:nth-child(2) {
+      background-image: url("/images/slider/slider-mobile-2.jpg");
+    }
+
+    &:nth-child(3) {
+      background-image: url("/images/slider/slider-mobile-3.jpg");
+    }
+  }
+
+  .slider__watermark,
+  .slider__info {
+    display: none;
+  }
+
+  .slider__nav_next,
+  .slider__nav_prev {
+    height: 36px;
+    width: 36px;
+  }
+
+  .slider__nav_next {
+    right: 5px;
+  }
+
+  .slider__nav_prev {
+    left: 5px;
+  }
+}

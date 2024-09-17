@@ -1,0 +1,47 @@
+.map__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+}
+
+.map__button {
+  display: flex;
+  gap: 20px;
+  padding: 14px 30px;
+  background-color: var(--blue-dark);
+  border-radius: 20px 20px 0 0;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.map__entity_hide {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .map__button {
+    font-size: 14px;
+    padding: 10px 26px;
+
+    img {
+      height: 16px;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .map__buttons {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .map__button {
+    flex: none;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    padding: 10px 20px;
+  }
+}
