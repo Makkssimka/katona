@@ -35,7 +35,7 @@
                 <a href="tel:8 (8442) 60-45-05"><span>8 (8442)</span> 60-45-05</a>
             </div>
             <div class="header__button">
-                <a href="#" class="button button_small">
+                <a data-modal-target="call_me" href="#" class="button button_small">
                     Заказать замер
                 </a>
             </div>
@@ -166,7 +166,7 @@
         <div class="about__header">
             <img src="/images/logo-simple.svg" alt="">
 
-            <h1>НАШИ ОКНА ПРОСЛУЖАТ БОЛЕЕ 20 ЛЕТ <a class="button" href="#">Заказать замер</a></h1>
+            <h1>НАШИ ОКНА ПРОСЛУЖАТ БОЛЕЕ 20 ЛЕТ <a data-modal-target="call_me" class="button" href="#">Заказать замер</a></h1>
         </div>
 
         <div class="about__list">
@@ -249,7 +249,7 @@
                 <img src="/images/index/steps-1.svg" alt="">
                 <div class="steps__header">Замер</div>
                 <p>бесплатный, гарантирует точную стоимость и подходящую именно вам комплектацию</p>
-                <a href="#" class="button">Заказать замер</a>
+                <a data-modal-target="call_me" href="#" class="button">Заказать замер</a>
             </div>
 
             <div class="steps__item">
@@ -473,6 +473,58 @@
     </div>
 </div>
 
+<div data-modal="call_me" class="modal__wrapper modal__wrapper_hide">
+    <div class="modal">
+        <div class="modal__header">
+            <p>ГОТОВЫ УСТУПИТЬ ЦЕНОЙ, НО НЕ КАЧЕСТВОМ*</p>
+
+            <img src="/images/icons/close.svg" class="modal__close" />
+        </div>
+
+        <div class="modal__body">
+            <div class="modal__text">
+                <div class="modal__head">Заказ замера</div>
+
+                <form class="form">
+                    <div data-required class="form__row">
+                        <div class="form__hint">Как к вам обращаться?</div>
+                        <input type="text" placeholder="ФИО*">
+                        <div class="form__error">Поле обязательно</div>
+                    </div>
+
+                    <div data-required class="form__row required">
+                        <input data-phone type="text" placeholder="Телефон*">
+                        <div class="form__error">Поле обязательно</div>
+                    </div>
+
+                    <div class="form__row">
+                        <input type="text" placeholder="E-mail">
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__row">
+                        <textarea rows="5" placeholder="Дополнительная информация"></textarea>
+                        <div class="form__error"></div>
+                    </div>
+
+                    <div class="form__button">
+                        <button type="submit" class="button">Заказать замер</button>
+
+                        <p>Нажав кнопку заказать замер, вы соглашаетесь с использованием ваших контактных данных. Мы гаранатируем их безопасность.</p>
+                    </div>
+                </form>
+
+                <div class="modal__info">
+                    <p>*Когда вы сравниваете по цене, сравнивайте одно и тоже:</p>
+                    <p><strong>Требуйте развёрнутую спецификацию и Сравнивайте каждый пункт</strong></p>
+                    <p>Наша цена всегда окажется в выигрыше при таком подходе. Проверьте!</p>
+                </div>
+            </div>
+
+            <div class="modal__img"></div>
+        </div>
+    </div>
+</div>
 <footer class="footer">
     <div class="container_big footer__grid">
         <div class="footer__logo">
@@ -547,6 +599,7 @@
 
 <script src="/scripts/libs/jquery-3.7.1.min.js"></script>
 <script src="/scripts/libs/swiper-bundle.min.js"></script>
+<script src="/scripts/libs/jquery.maskedinput.min.js"></script>
 <script src="/scripts/app.js"></script>
 </body>
 </html>

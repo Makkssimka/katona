@@ -91,3 +91,46 @@ $('[data-map_target]').click(function() {
 
   target.removeClass('map__entity_hide');
 });
+
+/** Скрипт модального окна */
+
+$('[data-modal-target]').click(function(e) {
+  e.preventDefault();
+
+  const target = $(this).data('modal-target');
+
+  $('body').addClass('no-scroll');
+  $(`[data-modal="${target}"]`).removeClass('modal__wrapper_hide');
+});
+
+$('.modal__close').click(function (e) {
+  e.preventDefault();
+
+  $('body').removeClass('no-scroll');
+  $(this).parents('[data-modal]').addClass('modal__wrapper_hide');
+})
+
+$('[data-phone]').mask('+7 (999) 999-99-99');
+
+/** Скрипт валидации формы */
+
+$('.form').submit(function(e) {
+  const fields = $(this).find('[data-required] input');
+  let check = true;
+
+  fields.each(function () {
+    if (!$(this).val()) {
+      $(this)
+        .parents('[data-required]')
+        .addClass('form__row_error');
+
+      check = false;
+    }
+  });
+
+  return check;
+});
+
+$('[data-required]').on('input', function () {
+  $('.form__row_error').removeClass('form__row_error');
+})
