@@ -133,4 +133,17 @@ $('.form').submit(function(e) {
 
 $('[data-required]').on('input', function () {
   $('.form__row_error').removeClass('form__row_error');
-})
+});
+
+/** Скрипт слайдера остальных страниц */
+
+new Swiper('.page-header__slider', {
+  navigation: {
+    nextEl: '.page-header__slider_next',
+    prevEl: '.page-header__slider_prev',
+  },
+  pagination: {
+    el: ".page-header__slider-pagination",
+    clickable: true,
+  },
+});

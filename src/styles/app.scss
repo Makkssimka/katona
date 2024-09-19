@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-size: 18px;
   color: var(--cyan);
+  line-height: 1.4;
   background-color: var(--grey-white);
 }
 
@@ -43,10 +44,53 @@ strong {
   font-weight: 300;
 }
 
-.container_big {
+.container_big,
+.container_content {
+  box-sizing: border-box;
   max-width: 1820px;
   margin: 0 auto;
   padding: 0 80px;
+}
+
+.container_content {
+  padding-left: 330px;
+  width: 80%;
+  margin: 0 0 50px 0;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin: 30px 0 20px;
+  }
+
+  .text_colored {
+    margin: 40px 0;
+  }
+
+  p {
+    margin: 8px 0 0;
+  }
+}
+
+.m_big {
+  margin: 20px 0 !important;
+}
+
+.button__row {
+  display: flex;
+  flex: 1 1;
+  gap: 15px;
+  margin: 40px 0;
+
+  .button {
+    text-align: center;
+    white-space: normal;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 a {
@@ -133,6 +177,12 @@ a {
   .button_small {
     height: 40px;
   }
+
+  .container_content {
+    padding-left: 280px;
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
 }
 
 @media (max-width: 960px) {
@@ -162,8 +212,13 @@ a {
     font-size: 26px;
   }
 
-  .container_big {
+  .container_big,
+  .container_content {
     padding: 0 20px;
+  }
+
+  .button__row {
+    flex-direction: column;
   }
 
   .button_small {
@@ -184,3 +239,4 @@ a {
 @import "blocks/reviews";
 @import "blocks/map";
 @import "blocks/call-me";
+@import "blocks/page-header";
