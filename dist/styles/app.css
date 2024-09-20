@@ -617,8 +617,14 @@ strong {
   font-weight: 300;
 }
 
+.text_big-thin {
+  font-size: 20px;
+  font-weight: 300;
+}
+
 .container_big,
 .container_content {
+  position: relative;
   box-sizing: border-box;
   max-width: 1820px;
   margin: 0 auto;
@@ -641,6 +647,10 @@ strong {
 }
 .container_content p {
   margin: 8px 0 0;
+}
+.container_content ul {
+  margin-left: 20px;
+  list-style: outside;
 }
 
 .m_big {
@@ -722,6 +732,9 @@ a:hover {
   .text_colored {
     font-size: 24px;
   }
+  .text_big-thin {
+    font-size: 18px;
+  }
   .text_slider {
     font-size: 32px;
   }
@@ -737,6 +750,9 @@ a:hover {
     padding-left: 280px;
     width: 100%;
     margin: 0 0 50px 0;
+  }
+  .hide_md {
+    display: none;
   }
 }
 @media (max-width: 960px) {
@@ -756,6 +772,9 @@ a:hover {
   }
   .text_colored {
     font-size: 18px;
+  }
+  .text_big-thin {
+    font-size: 16px;
   }
   .text_slider {
     font-size: 26px;
@@ -2134,6 +2153,43 @@ p.page-header__slide-head {
     font-size: 26px;
   }
 }
+.content__img {
+  position: relative;
+}
+.content__img img {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  right: -360px;
+  top: -100px;
+}
+
+.content__icons-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  gap: 30px 0;
+}
+.content__icons-grid .text_big-thin {
+  margin: 25px 0 10px;
+}
+.content__icons-grid img {
+  height: 70px;
+  width: auto;
+}
+
+.content__icon {
+  width: 20%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.content__buttons {
+  margin: 30px 0;
+  display: flex;
+}
+
 .vacancy__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2199,6 +2255,20 @@ p.page-header__slide-head {
     width: auto;
     margin: 0 auto;
   }
+  .content__img {
+    position: relative;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .content__img img {
+    width: 300px;
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+  .content__icon {
+    width: 33.33%;
+  }
 }
 @media (max-width: 960px) {
   .vacancy__grid {
@@ -2220,6 +2290,16 @@ p.page-header__slide-head {
   .certificate__button .button {
     width: 100%;
     margin: 0 auto;
+  }
+  .content__icons-grid img {
+    height: 60px;
+    width: auto;
+  }
+  .content__img img {
+    width: 60%;
+  }
+  .content__icon {
+    width: 60%;
   }
 }
 .consultation {
