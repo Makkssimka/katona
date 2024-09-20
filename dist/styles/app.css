@@ -2148,3 +2148,63 @@ p.page-header__slide-head {
     margin-top: 40px;
   }
 }
+.consultation {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-top: 60px;
+  padding: 45px 50px;
+  background-color: var(--grey-midle);
+  border-radius: 50px;
+}
+.consultation p {
+  margin: 30px 0;
+  font-size: 20px;
+}
+.consultation .button {
+  width: 400px;
+}
+
+.consultation__header {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.consultation__image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1400px) {
+  .consultation {
+    gap: 30px;
+  }
+  .consultation p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  .consultation .button {
+    width: 100%;
+  }
+  .consultation__header {
+    font-size: 24px;
+  }
+}
+@media (max-width: 960px) {
+  .consultation {
+    grid-template-columns: 1fr;
+    padding: 25px;
+    border-radius: 30px;
+  }
+  .consultation p {
+    font-size: 12px;
+  }
+  .consultation__image {
+    display: none;
+  }
+  .consultation__header {
+    font-size: 22px;
+  }
+}
