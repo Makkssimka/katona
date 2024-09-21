@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная страница</title>
+
+    <link rel="stylesheet" href="/styles/libs/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/styles/app.css">
+</head>
+<body>
+@@include('../components/header.html')
+@@include('../components/mobile-menu.html')
+@@include('../components/page-header.html')
+
+<div class="container_content">
+    <h2>Остекление балкона</h2>
+
+    <p>Остекление балкона в квартире – это возможность расширить полезную площадь. И вы можете решить, каким пространством станет ваш балкон.</p>
+
+    @@include('../components/sber.html')
+
+    <div class="alum__grid">
+        <div class="alum__item">
+            <div class="alum__item-head">
+                <img src="/images/windows/temp-icon-1.svg" alt="">
+
+                <p>Холодное <br /> остекление:</p>
+            </div>
+
+            <p>Идеально для тех, кто хочет использовать балкон как дополнительное пространство для хранения, защищенное от дождя, снега и ветра. Остекление выполняется из легкого и прочного алюминиевого профиля с одним стеклом.</p>
+        </div>
+
+        <div class="alum__item">
+            <div class="alum__item-head">
+                <img src="/images/windows/temp-icon-2.svg" alt="">
+
+                <p>Теплое <br /> остекление:</p>
+            </div>
+
+            <p>Превратите свой балкон в уютное жилое пространство!  Теплое остекление пластиковыми окнами со стеклопакетами обеспечит надежную защиту от холода и шума. Вы сможете наслаждаться комфортной температурой на балконе даже зимой, а при желании — организовать там кабинет или зону отдыха.</p>
+        </div>
+    </div>
+
+    <h3>Выгоды теплого остекления:</h3>
+
+    <p>Герметичность и отличная теплоизоляция. Возможность поддерживать плюсовую температуру на балконе даже в мороз (например, при -15°C на улице на балконе будет +20°C). Возможность установки дополнительных отопительных приборов.</p>
+
+    <h3>Варианты остекления балконов</h3>
+    
+    <div class="balcony__gallery swiper">
+        <div class="swiper-wrapper">
+            <div class="balcony__slide swiper-slide"></div>
+            <div class="balcony__slide swiper-slide"></div>
+            <div class="balcony__slide swiper-slide"></div>
+        </div>
+
+        <div class="swiper-button-next balcony__nav_next">
+            <img src="/images/icons/arrow-right.svg" alt="">
+        </div>
+        <div class="swiper-button-prev balcony__nav_prev">
+            <img src="/images/icons/arrow-left.svg" alt="">
+        </div>
+    </div>
+
+    <h4>Мы поможем вам создать на балконе пространство вашей мечты!</h4>
+
+    @@include('../components/consultation-2.html')
+</div>
+
+@@include('../components/map.html')
+
+@@include('../components/call-me.html')
+@@include('../components/footer.html')
+
+<script src="/scripts/libs/jquery-3.7.1.min.js"></script>
+<script src="/scripts/libs/swiper-bundle.min.js"></script>
+<script src="/scripts/libs/jquery.maskedinput.min.js"></script>
+<script src="/scripts/app.js"></script>
+</body>
+</html>

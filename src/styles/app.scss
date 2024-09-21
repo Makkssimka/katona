@@ -29,6 +29,11 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
 strong {
   font-weight: 600;
 }
@@ -65,10 +70,15 @@ strong {
 
   h2 {
     margin-bottom: 20px;
+    line-height: 1.2;
   }
 
   h3 {
     margin: 30px 0 20px;
+  }
+
+  h4 {
+    margin: 30px 0 10px;
   }
 
   .text_colored {
@@ -83,10 +93,18 @@ strong {
     margin-left: 20px;
     list-style: outside;
   }
+
+  .text_blue {
+    color: var(--blue-dark);
+  }
 }
 
 .m_big {
   margin: 20px 0 !important;
+}
+
+.mt_big {
+  margin-top: 70px;
 }
 
 .button__row {
@@ -171,6 +189,10 @@ a {
     font-size: 24px;
   }
 
+  h4 {
+    font-size: 24px;
+  }
+
   .text_colored {
     font-size: 24px;
   }
@@ -223,6 +245,10 @@ a {
     font-size: 22px;
   }
 
+  h4 {
+    font-size: 22px;
+  }
+
   .text_colored {
     font-size: 18px;
   }
@@ -265,3 +291,4 @@ a {
 @import "blocks/page-header";
 @import "blocks/pages";
 @import "blocks/consultation";
+@import "blocks/windows";

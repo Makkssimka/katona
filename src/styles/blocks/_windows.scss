@@ -1,0 +1,473 @@
+.sber__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px 0 100px;
+  gap: 45px;
+  align-items: center;
+}
+
+p.sber__text {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.alum__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 100px
+}
+
+.alum__item {
+  font-size: 18px;
+}
+
+.alum__item-head {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 300;
+
+  p {
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  img {
+    height: 65px;
+    width: auto;
+  }
+}
+
+.alum__types {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  img {
+    border-radius: 50px 50px 50px 0;
+  }
+}
+
+.alum__types-button {
+  width: 70%;
+  margin: 30px auto 0;
+}
+
+.alum__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin: 140px 0;
+}
+
+.alum__info {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+
+  img {
+    flex: none;
+    width: 480px;
+    height: auto;
+    border-radius: 50px 50px 50px 0;
+  }
+}
+
+.alum__info_reverse {
+  flex-direction: row-reverse;
+}
+
+.win-consultation__wrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  margin: 50px 0 100px;
+}
+
+.win-consultation__info {
+  background-color: var(--grey-midle);
+  padding: 45px;
+  border-radius: 50px;
+
+  p {
+    font-size: 20px;
+    margin: 30px 0 30px;
+  }
+}
+
+.win-consultation__head {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.win-consultation__icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.win-consultation__icon {
+  font-size: 16px;
+  text-align: center;
+  background-color: var(--blue);
+  padding: 26px;
+  border-radius: 50px;
+
+  img {
+    height: 70px;
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.icons__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin: 80px 0;
+}
+
+.icons__item {
+  text-align: center;
+  font-size: 16px;
+
+  img {
+    height: 75px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.grid_two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 80px 0;
+}
+
+.glass__types {
+  margin: 50px 0;
+}
+
+.glass__head {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.glass__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.glass__item {
+  font-size: 24px;
+  font-weight: 500;
+
+  img {
+    height: 300px;
+    width: auto;
+  }
+}
+
+.glass__nav_next,
+.glass__nav_prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 56px;
+  width: 56px;
+  top: 28px;
+  border-radius: 50%;
+}
+
+.grid-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px 0;
+}
+
+.grid-row__item {
+  text-align: center;
+  gap: 50px;
+
+  img {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+
+.balcony__slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  height: 500px;
+  border-radius: 50px;
+}
+
+.balcony__slide:nth-child(1) {
+  background-image: url('/images/windows/balkony-1.jpg');
+}
+
+.balcony__slide:nth-child(2) {
+  background-image: url('/images/windows/balkony-1.jpg');
+}
+
+.balcony__slide:nth-child(3) {
+  background-image: url('/images/windows/balkony-1.jpg');
+}
+
+.balcony__nav_next,
+.balcony__nav_prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1400px) {
+  .alum__grid {
+    gap: 50px;
+  }
+
+  .alum__item {
+    font-size: 14px;
+  }
+
+  .alum__item-head {
+    gap: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+    p {
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    img {
+      height: 50px;
+    }
+  }
+
+  p.sber__text {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  .alum__info {
+    display: flex;
+    gap: 100px;
+
+    img {
+      width: 430px;
+    }
+  }
+
+  .win-consultation__wrapper {
+    gap: 15px;
+    grid-template-columns: 5fr 4fr;
+  }
+
+  .win-consultation__head {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .win-consultation__info {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .win-consultation__icon {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+
+    img {
+      height: 50px;
+      width: auto;
+    }
+  }
+
+  .icons__grid {
+    gap: 20px;
+  }
+
+  .icons__item {
+    font-size: 14px;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .glass__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .glass__item {
+    font-size: 18px;
+
+    img {
+      height: 240px;
+      width: auto;
+    }
+  }
+
+  .glass__nav_next,
+  .glass__nav_prev {
+    height: 34px;
+    width: 34px;
+    top: 28px;
+  }
+
+  .balcony__nav_next,
+  .balcony__nav_prev {
+    height: 34px;
+    width: 34px;
+  }
+}
+
+@media (max-width: 960px) {
+  .alum__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .alum__item-head {
+    gap: 20px;
+    margin-bottom: 15px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .alum__item {
+    font-size: 12px;
+  }
+
+  .alum__types {
+    grid-template-columns: 1fr;
+
+    img {
+      border-radius: 30px 30px 30px 0;
+    }
+  }
+
+  .alum__type {
+    p {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .alum__types-button {
+    width: 100%;
+  }
+
+  .alum__infos {
+    gap: 40px;
+    margin: 40px 0;
+  }
+
+  .alum__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    img {
+      width: 100%;
+      border-radius: 30px 30px 30px 0;
+    }
+  }
+
+  .sber__wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 40px auto;
+  }
+
+  p.sber__text {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .win-consultation__wrapper {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+
+  .win-consultation__head {
+    font-size: 22px;
+  }
+
+  .win-consultation__info {
+    border-radius: 30px;
+    padding: 25px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .win-consultation__icon {
+    border-radius: 30px;
+    font-size: 12px;
+  }
+
+  .icons__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icons__item {
+    font-size: 14px;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .grid_two {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .glass__head {
+    font-size: 24px;
+    padding: 0 40px;
+  }
+
+  .glass__items {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .glass__item {
+    text-align: center;
+  }
+
+  .balcony__slide {
+    border-radius: 30px;
+  }
+}

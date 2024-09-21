@@ -147,3 +147,21 @@ new Swiper('.page-header__slider', {
     clickable: true,
   },
 });
+
+/** Скрипт слайдера типов остекления */
+
+new Swiper('.glass__types', {
+  navigation: {
+    nextEl: '.glass__nav_next',
+    prevEl: '.glass__nav_prev',
+  }
+});
+
+/** Скрипт слайдера вариантов остекления балкона */
+
+new Swiper('.balcony__gallery', {
+  navigation: {
+    nextEl: '.balcony__nav_next',
+    prevEl: '.balcony__nav_prev',
+  }
+});
