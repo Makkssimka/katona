@@ -165,3 +165,33 @@ new Swiper('.balcony__gallery', {
     prevEl: '.balcony__nav_prev',
   }
 });
+
+/** Скрипт слайдера вариантов остекления балкона */
+
+new Swiper('.about__workers', {
+  navigation: {
+    nextEl: '.workers__nav_next',
+    prevEl: '.workers__nav_prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: "auto",
+    },
+    960: {
+      slidesPerView: "auto",
+    },
+    1400: {
+      slidesPerView: "auto",
+    }
+  }
+});
+
+/** Скрипт слайдера сертификатов */
+
+new Swiper('.about__certificates', {
+  navigation: {
+    nextEl: '.certificate__nav_next',
+    prevEl: '.certificate__nav_prev',
+  },
+  slidesPerView: "auto",
+});

@@ -87,6 +87,111 @@
   }
 }
 
+.about__img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0 60px;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+  }
+}
+
+.about__buttons {
+  margin: 30px 0;
+  display: flex;
+}
+
+.about__post {
+  position: relative;
+  border: 1px solid var(--cyan);
+  padding: 30px;
+  margin-right: 50px;
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.about__angle {
+  position: absolute;
+  right: -50px;
+  bottom: -1px;
+  height: auto;
+  width: 50px;
+}
+
+.about__post-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.about__worker {
+  margin: 0 10px;
+  width: calc(25% - 20px);
+
+  img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+.about__certificates {
+  margin: 50px 0;
+}
+
+.about__certificate {
+  margin: 0 40px;
+  width: calc(33.33% - 80px);
+}
+
+p.about__certificate-head {
+  margin: 30px 0 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.workers__nav_next,
+.workers__nav_prev,
+.certificate__nav_next,
+.certificate__nav_prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+
+.workers__nav_next {
+  right: 20px;
+}
+
+.workers__nav_prev {
+  left: 20px;
+}
+
+.about__reviews {
+  margin-bottom: 40px;
+
+  .reviews__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 1400px) {
   .certificates__grid {
     display: grid;
@@ -124,8 +229,33 @@
   .content__icon {
     width: 33.33%;
   }
-}
 
+  .about__img {
+    img {
+      border-radius: 30px;
+    }
+  }
+
+  .about__post-info {
+    gap: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .about__worker {
+    width: calc(33.33% - 20px);
+  }
+
+  .about__certificate {
+    width: calc(50% - 80px);
+  }
+
+  p.about__certificate-head {
+    margin: 20px 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
 
 @media (max-width: 960px) {
   .vacancy__grid {
@@ -155,7 +285,6 @@
     }
   }
 
-
   .content__icons-grid {
     img {
       height: 60px;
@@ -171,5 +300,56 @@
 
   .content__icon {
     width: 60%;
+  }
+
+  .about__img {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about__post-info {
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+      width: 45%;
+    }
+  }
+
+  .about__post {
+    margin-right: 30px;
+  }
+
+  .about__angle {
+    position: absolute;
+    right: -30px;
+    width: 30px;
+  }
+
+  .about__worker {
+    width: calc(75% - 20px);
+  }
+
+  .workers__nav_next,
+  .workers__nav_prev {
+    display: none;
+  }
+
+  .certificate__nav_next,
+  .certificate__nav_prev {
+    width: 34px;
+    height: 34px;
+  }
+
+  .about__certificate {
+    width: calc(100% - 80px);
+  }
+
+  .about__reviews {
+
+    .reviews__list {
+      grid-template-columns: 1fr;
+    }
   }
 }
